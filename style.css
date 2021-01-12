@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "circular", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  background-color: hsl(210, 46%, 95%);
+  color: hsl(212, 23%, 69%);
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  max-width: 750px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+}
+
+.slideImage {
+  background: url(./images/drawers.jpg) no-repeat;
+  background-size: cover;
+  width: 300px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.main {
+  width: 500px;
+  padding: 2em;
+}
+
+h1 {
+  font-weight: 700;
+  color: hsl(217, 19%, 35%);
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: hsl(214, 17%, 51%);
+  margin: 0.85em 0;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-top: 1.2em;
+}
+
+.profile-img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.share {
+  margin-left: 10em;
+  border-radius: 50%;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+.share-img {
+  width: 30px;
+}
+
+.profile-list {
+  list-style: none;
+  margin-left: 0.8em;
+}
+
+.profile-name {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5em;
+  color: hsl(217, 19%, 35%);
+}
+
+.profile-date {
+  font-size: 0.8rem;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+    flex-direction: column;
+  }
+  .slideImage {
+    width: 100%;
+    height: 300px;
+    border-radius: 0;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .description {
+    font-size: 1rem;
+  }
+}
